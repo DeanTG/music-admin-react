@@ -12,3 +12,20 @@
   },
 ```
 ，在css-loader的test部分加入scss，同时在file-loader 的exclude部分，添加 `/\.scss$/`
+
+## antd 按需加载组件
+* `npm install babel-plugin-import -D` 安装 babel-plugin-import
+* package.json中 babel配置项位置添加
+```
+  "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": "css"
+        }
+      ]
+    ]
+```
+
+## react router4
